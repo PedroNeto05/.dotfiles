@@ -115,6 +115,16 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
      make && sudo make install
      ```  
 
+### 8. Instalar a [Fonte](https://www.nerdfonts.com/font-downloads)
+- **Debian/Ubuntu**:  
+     ```bash  
+     cd /tmp && curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip
+     unzip CascadiaCode.zip -d CascadiaCode
+     cd ./CascadiaCode
+     mkdir -p ~/.local/share/fonts
+     mv ./CaskaydiaCoveNerdFontMono-Regular.ttf ~/.local/share/fonts/
+     ```  
+
 ### 8. Instalar o [Kitty terminal](https://sw.kovidgoyal.net/kitty/)
 - **Debian/Ubuntu**:  
      ```bash  
