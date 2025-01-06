@@ -127,7 +127,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
      sudo apt install kitty
      ```  
 
-### 8. Instalar o [Github CLI](https://cli.github.com/)
+### 9. Instalar o [Github CLI](https://cli.github.com/)
 - **Debian/Ubuntu**:  
      ```bash  
      (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
@@ -140,7 +140,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
          && sudo apt install gh -y
      ```  
 
-### 9. Reiniciar o pc
+### 10. Reiniciar o pc
 
 --- 
 
