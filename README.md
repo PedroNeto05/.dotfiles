@@ -150,7 +150,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
 ### 1. Clonar o repository de [Dotfiles](https://github.com/PedroNeto05/dotfiles) 
 - **Debian/Ubuntu**:  
      ```bash  
-     git clone git@github.com:PedroNeto05/.dotfiles.git ~/
+     mkdir ~/.dotfiles && git clone https://github.com/PedroNeto05/.dotfiles.git ~/.dotfiles
      ```  
 ### 2. Rodar o Makefile
 - **Debian/Ubuntu**:  
