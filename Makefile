@@ -1,19 +1,14 @@
-# Definindo o diretório atual
-CUR_DIR := $(shell pwd)
+# Definir o diretório onde o Makefile está localizado
+DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
-# Encontrar todas as pastas no diretório atual (exceto o próprio Makefile)
-DIRS := $(filter-out $(CUR_DIR)/Makefile, $(wildcard $(CUR_DIR)/*/))
+# Encontrar todas as pastas no diretório, excluindo Makefile, .git e .gitignore
+SUBDIRS := $(filter-out $(DIR)Makefile $(DIR).git $(DIR).gitignore,$(wildcard $(DIR)*/))
 
-# Alvo para rodar o stow em todas as pastas
-all: $(DIRS)
-	@echo "Stow aplicado em todos os diretórios"
+# Alvo padrão
+all: stow
 
-# Alvo para rodar o stow em cada diretório
-$(DIRS):
-	@echo "Rodando stow em $(notdir $@)"
-	@stow -d $(CUR_DIR) -t ~ $(notdir $@)
-
-# Alvo para limpar links simbólicos criados pelo stow
-clean:
-	@echo "Removendo links simbólicos"
-	@stow -d $(CUR_DIR) -t ~ -D $(DIRS)
+# Aplica o stow -R em todas as pastas, exceto Makefile, .git e .gitignore
+stow:
+	for dir in $(SUBDIRS); do \
+		stow -R $$dir; \
+	done
