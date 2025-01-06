@@ -139,8 +139,14 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
          && sudo apt update \
          && sudo apt install gh -y
      ```  
+### 10. Instalar o [FzF](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
+- **Debian/Ubuntu**:  
+     ```bash  
+     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+     ~/.fzf/install
+     ```  
 
-### 10. Reiniciar o pc
+### 11. Reiniciar o pc
 
 --- 
 
