@@ -78,9 +78,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
 ### 3. Instalar o [Oh-My-Fish](https://github.com/oh-my-fish/oh-my-fish) 
 - **Debian/Ubuntu**:  
   ```bash  
-  sudo apt-add-repository ppa:fish-shell/release-3
-  sudo apt update
-  sudo apt install fish
+  curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
   ```
 
 ### 4. Instalar o [asdf](https://asdf-vm.com/)
