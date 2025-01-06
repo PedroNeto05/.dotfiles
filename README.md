@@ -52,7 +52,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
 
 ---
 
-## 📦 Download 
+## 📦 Download e Configuração
 
 ### 1. Instalar as primeiras ferramentas
 - **Debian/Ubuntu**:  
@@ -68,32 +68,43 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
   sudo apt update && sudo apt install fish
   ```
 
-### 2. Instalar o [Startship theme](https://starship.rs) 
+### 3. Reiniciar o pc
+
+### 4. Definir o Fish como terminal padrao
+- **Debian/Ubuntu**:  
+  ```bash  
+  chsh -s /usr/bin/fish
+  ```
+
+### 5. Reiniciar o pc
+
+### 6. Instalar o [Startship theme](https://starship.rs) 
 - **Debian/Ubuntu**:  
   ```bash  
   curl -sS https://starship.rs/install.sh | sh
+  fish
   ```
 
-### 3. Instalar o [Oh-My-Fish](https://github.com/oh-my-fish/oh-my-fish) 
+### 7. Instalar o [Oh-My-Fish](https://github.com/oh-my-fish/oh-my-fish) 
 - **Debian/Ubuntu**:  
   ```bash  
   curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
   ```
 
-### 4. Instalar o [asdf](https://asdf-vm.com/)
+### 8. Instalar o [asdf](https://asdf-vm.com/)
 - **Debian/Ubuntu**:  
   ```bash  
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.15.0
   mkdir -p ~/.config/fish/completions; and ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions
   ```
 
-### 5. Instalar o [GNU Stow](https://www.gnu.org/software/stow/) 
+### 9. Instalar o [GNU Stow](https://www.gnu.org/software/stow/) 
 - **Debian/Ubuntu**:  
   ```bash  
   sudo apt update && sudo apt install stow  
   ```
 
-### 6. Instalar o [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) 
+### 10. Instalar o [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) 
 - **Debian/Ubuntu**:  
   ```bash  
   cd /tmp && curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
@@ -101,7 +112,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
   sudo tar -C /opt -xzf nvim-linux64.tar.gz
   ```
 
-### 7. Instalar o [Tmux](https://github.com/tmux/tmux/releases)  
+### 11. Instalar o [Tmux](https://github.com/tmux/tmux/releases)  
 - **Debian/Ubuntu**:  
   - **Instale as dependências necessárias:**  
      ```bash  
@@ -115,7 +126,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
      make && sudo make install
      ```  
 
-### 8. Instalar a [Fonte](https://www.nerdfonts.com/font-downloads)
+### 12. Instalar a [Fonte](https://www.nerdfonts.com/font-downloads)
 - **Debian/Ubuntu**:  
      ```bash  
      cd /tmp && curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip
@@ -125,13 +136,20 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
      mv ./CaskaydiaCoveNerdFontMono-Regular.ttf ~/.local/share/fonts/
      ```  
 
-### 8. Instalar o [Kitty terminal](https://sw.kovidgoyal.net/kitty/)
+### 13. Instalar o [Kitty terminal](https://sw.kovidgoyal.net/kitty/)
 - **Debian/Ubuntu**:  
      ```bash  
      sudo apt install kitty
      ```  
 
-### 9. Instalar o [Github CLI](https://cli.github.com/)
+### 14. Clonar o repository e fazer a configuração de [Dotfiles](https://github.com/PedroNeto05/dotfiles) 
+- **Debian/Ubuntu**:  
+     ```bash  
+     mkdir ~/.dotfiles && git clone https://github.com/PedroNeto05/.dotfiles.git ~/.dotfiles
+     cd ~/.dotfiles && make
+     ```  
+
+### 15. Instalar o [Github CLI](https://cli.github.com/)
 - **Debian/Ubuntu**:  
      ```bash  
      sudo mkdir -p -m 755 /etc/apt/keyrings; \
@@ -144,27 +162,18 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
          sudo apt update; \
          sudo apt install gh -y
      ```  
-### 10. Instalar o [FzF](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
+### 16. Instalar o [FzF](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
 - **Debian/Ubuntu**:  
      ```bash  
      git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
      ~/.fzf/install
      ```  
-
-### 11. Reiniciar o pc
-
---- 
-
-## Configuração 
-
-### 1. Clonar o repository de [Dotfiles](https://github.com/PedroNeto05/dotfiles) 
+### 17. Instalar o [LazyGit](https://github.com/jesseduffield/lazygit)
 - **Debian/Ubuntu**:  
      ```bash  
-     mkdir ~/.dotfiles && git clone https://github.com/PedroNeto05/.dotfiles.git ~/.dotfiles
-     ```  
-### 2. Rodar o Makefile
-- **Debian/Ubuntu**:  
-     ```bash  
-     cd ~/.dotfiles
-     make
+     asdf plugin-add golang
+     asdf install golang {goland version}
+     asdf reshim
+     go install github.com/jesseduffield/lazygit@latest
+     asdf reshim
      ```  
