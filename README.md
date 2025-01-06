@@ -109,11 +109,9 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
      ```  
   - Acesse a pasta `Downloads` e faça o download do Tmux:
      ```bash  
-     cd ~/Downloads  
-     curl -LO https://github.com/tmux/tmux/releases/tag/3.5a/tmux-3.5.a.tar.gz  
+     cd ~/Downloads && curl -LO https://github.com/tmux/tmux/releases/download/3.5a/tmux-3.5a.tar.gz
      tar -zxf tmux-*.tar.gz
-     cd tmux-*/
-     ./configure
+     cd tmux-*/ && ./configure
      make && sudo make install
      ```  
 
