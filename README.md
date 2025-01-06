@@ -65,8 +65,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
 - **Debian/Ubuntu**:  
   ```bash  
   sudo apt-add-repository ppa:fish-shell/release-3
-  sudo apt update
-  sudo apt install fish
+  sudo apt update && sudo apt install fish
   ```
 
 ### 2. Instalar o [Startship theme](https://starship.rs) 
@@ -97,8 +96,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
 ### 6. Instalar o [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md) 
 - **Debian/Ubuntu**:  
   ```bash  
-  cd ~/Downloads
-  curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+  cd ~/Downloads && curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
   sudo rm -rf /opt/nvim
   sudo tar -C /opt -xzf nvim-linux64.tar.gz
   ```
