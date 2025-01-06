@@ -58,7 +58,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
 - **Debian/Ubuntu**:  
   ```bash  
   sudo apt upgrade && sudo apt update -y
-  sudo apt install git curl wget build-essential
+  sudo apt install git curl wget build-essential zip unzip
   ```
 
 ### 2. Instalar o [Fish Shell](https://github.com/fish-shell/fish-shell) 
