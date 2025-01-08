@@ -174,6 +174,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
      asdf plugin-add golang
      asdf install golang {goland version}
      asdf reshim
+     asdf global golang {golang version}
      go install github.com/jesseduffield/lazygit@latest
      asdf reshim
      ```  
