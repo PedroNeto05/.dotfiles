@@ -123,6 +123,16 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
      cd tmux-*/ && ./configure
      make && sudo make install
      ```  
+  - Instalar o gerenciador de plugins TPM 
+     ```bash  
+     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+     ```  
+     ```bash  
+     # type this in terminal if tmux is already running
+     tmux source ~/.tmux.conf
+     ```  
+     - Apos isso, com o tmux rodando, apertar ```prefix``` + ```I```
+
 
 ### 12. Instalar a [Fonte](https://www.nerdfonts.com/font-downloads)
 - **Debian/Ubuntu**:  
