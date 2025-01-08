@@ -68,8 +68,6 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
   sudo apt update && sudo apt install fish
   ```
 
-### 3. Reiniciar o pc
-
 ### 4. Definir o Fish como terminal padrao
 - **Debian/Ubuntu**:  
   ```bash  
