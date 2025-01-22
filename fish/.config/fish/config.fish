@@ -58,3 +58,4 @@ if status is-interactive
     # Inicializar Starship para prompt moderno
     starship init fish | source
 end
+uv generate-shell-completion fish | source
