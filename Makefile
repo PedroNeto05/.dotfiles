@@ -40,7 +40,7 @@ kitty:
 	sudo apt install kitty
 
 warp:
-	curl -o warp.deb "https://app.warp.dev/download?package=deb"
+	cd /tmp && curl -L -o warp.deb "https://app.warp.dev/download?package=deb"
 	sudo dpkg -i warp.deb
 	mkdir -p ~/.config/warp-terminal/
 
@@ -61,4 +61,4 @@ stow:
 	done
 	git restore .
 
-all: initial fish asdf neovim fonte warp
+all: initial fish asdf neovim tmux fonte warp fzf gh uv
