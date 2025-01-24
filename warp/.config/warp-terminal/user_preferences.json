@@ -1,0 +1,32 @@
+{
+  "prefs": {
+    "OverrideOpacity": "100",
+    "HonorPS1": "true",
+    "AvailableLLMs": "{\"default_id\":\"claude-3-5-sonnet\",\"choices\":[{\"display_name\":\"claude 3.5 sonnet\",\"id\":\"claude-3-5-sonnet\"},{\"display_name\":\"claude 3.5 haiku\",\"id\":\"claude-3-5-haiku\"},{\"display_name\":\"gpt-4o\",\"id\":\"gpt-4o\"}]}",
+    "WelcomeTipsFeaturesUsed": "[{\"Hint\":\"CreateBlock\"},{\"Action\":\"ThemePicker\"},{\"Action\":\"CommandPalette\"},{\"Action\":\"SplitPane\"},{\"Hint\":\"BlockSelect\"},{\"Action\":\"CommandSearch\"}]",
+    "FontSize": "24.0",
+    "InputAutodetectionBannerDismissed": "true",
+    "FontName": "\"CaskaydiaCove Nerd Font Mono\"",
+    "AgentModeSuggestionsRemainingWarnings": "0",
+    "AIRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":6,\"next_refresh_time\":\"2025-02-07T00:08:06.532048Z\",\"is_unlimited\":false,\"request_limit_refresh_duration\":\"Monthly\",\"accepted_autosuggestions_limit\":250,\"is_unlimited_autosuggestions\":false,\"accepted_autosuggestions_since_last_refresh\":70}",
+    "SavedPrompt": "\"Default\"",
+    "WorkflowsBoxOpen": "true",
+    "Theme": "{\"Custom\":{\"name\":\"Tokyo Night\",\"path\":\"/home/pedro/.local/share/warp-terminal/themes/standard/tokyo_night.yaml\"}}",
+    "AutosuggestionAcceptedCount": "2",
+    "ChangelogVersions": "{\"v0.2025.01.15.08.02.stable_03\":true}",
+    "DidNonAnonymousUserLogIn": "true",
+    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2025-02-07T00:08:06.532048Z\",\"is_unlimited\":false,\"request_limit_refresh_duration\":\"Monthly\",\"accepted_autosuggestions_limit\":250,\"is_unlimited_autosuggestions\":false,\"accepted_autosuggestions_since_last_refresh\":0}",
+    "Shortcuts": "true",
+    "EmacsBindingsBannerState": "\"Dismissed\"",
+    "NextCommandSuggestionsUpgradeBannerNumTimesShownThisPeriod": "0",
+    "HasAutoOpenedWelcomeFolder": "true",
+    "NotebookFontSize": "14.0",
+    "CrashReportingEnabled": "false",
+    "TelemetryEnabled": "false",
+    "ExperimentId": "616357fd-54ab-49eb-90fc-edc985e814b2",
+    "RestoreSession": "false",
+    "ReceivedReferralTheme": "\"Inactive\"",
+    "DidShowActiveAIPermissionsDialog": "true",
+    "LigatureRenderingEnabled": "true"
+  }
+}

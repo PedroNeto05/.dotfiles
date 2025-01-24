@@ -1,0 +1,4 @@
+---
+"editor_view:cmd_i": none
+"workspace:toggle_ai_assistant": ctrl-shift-I
+"terminal:accept_agent_mode_query_suggestion": ctrl-shift-enter
