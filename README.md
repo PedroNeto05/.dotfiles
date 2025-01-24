@@ -4,54 +4,6 @@ Este repositório contém meus arquivos de configuração para ferramentas que u
 
 ---
 
-## 📋 Índice  
-- [Introdução](#)  
-- [Ferramentas](#Ferramentas)  
-- [Passo a passo de como baixar essas coisas](#Download)
-
----
-
-## 🛠 Ferramentas 
-
-Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na sua máquina:  
-1. [Git](#1-instalar-as-primeiras-ferramentas)  
-   Ferramenta de controle de versão distribuído para gerenciar o código-fonte.
-
-2. [Curl](#1-instalar-as-primeiras-ferramentas)  
-   Utilitário de linha de comando para transferir dados de ou para um servidor.
-
-3. [Wget](#1-instalar-as-primeiras-ferramentas)  
-   Ferramenta de download de arquivos pela web via linha de comando.
-
-4. [Build-essential](#1-instalar-as-primeiras-ferramentas)  
-   Conjunto de pacotes essenciais para compilar e construir software no Linux.
-
-5. [Fish Shell](#2-instalar-o-fish-shell)  
-   Shell interativo e amigável com recursos avançados, como autocompletar.
-
-6. [Starship Theme](#3-instalar-o-startship-theme)  
-   Prompt de linha de comando rápido e personalizável, que pode ser usado com vários shells.
-
-7. [Oh-My-Fish](#4-instalar-o-oh-my-fish)  
-   Framework para o Fish Shell, oferecendo plugins e temas.
-
-8. [Asdf](#5-instalar-o-asdf)  
-   Gerenciador de versões para múltiplas linguagens de programação e ferramentas.
-
-9. [GNU Stow](#6-instalar-o-gnu-stow)  
-   Ferramenta de gerenciamento de dotfiles, facilitando o uso de configurações compartilhadas.
-
-10. [Neovim](#7-instalar-o-neovim)  
-    Editor de texto altamente configurável e moderno, baseado no Vim.
-
-11. [Tmux](#8-instalar-o-tmux)  
-    Multiplexador de terminal que permite dividir uma sessão de terminal em múltiplas janelas.
-
-12. [Kitty Terminal](#9-instalar-o-kitty-terminal)  
-    Emulador de terminal com suporte a gráficos e desempenho rápido.
-
----
-
 ## 📦 Download e Configuração
 
 ### 1. Instalar as primeiras ferramentas
@@ -106,8 +58,7 @@ Antes de usar os dotfiles, é necessário ter algumas ferramentas instaladas na 
 - **Debian/Ubuntu**:  
   ```bash  
   cd /tmp && curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-  sudo rm -rf /opt/nvim
-  sudo tar -C /opt -xzf nvim-linux64.tar.gz
+  sudo rm -rf /opt/nvim && sudo tar -C /opt -xzf nvim-linux64.tar.gz
   ```
 
 ### 11. Instalar o [Tmux](https://github.com/tmux/tmux/releases)  
