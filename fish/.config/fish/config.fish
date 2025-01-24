@@ -26,6 +26,8 @@ end
 if status is-interactive
     # Configurações para sessões interativas
 
+    uv generate-shell-completion fish | source
+
     # Configuração do prompt
     set -g fish_greeting
 
@@ -58,4 +60,3 @@ if status is-interactive
     # Inicializar Starship para prompt moderno
     starship init fish | source
 end
-uv generate-shell-completion fish | source
