@@ -41,6 +41,7 @@ kitty:
 
 warp:
 	curl -o warp.deb "https://app.warp.dev/download?package=deb"
+	sudo dpkg -i warp.deb
 	mkdir -p ~/.config/warp-terminal/
 
 fzf:
