@@ -42,7 +42,6 @@ kitty:
 warp:
 	cd /tmp && curl -L -o warp.deb "https://app.warp.dev/download?package=deb"
 	sudo dpkg -i warp.deb
-	mkdir -p ~/.config/warp-terminal/
 
 fzf:
 	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
