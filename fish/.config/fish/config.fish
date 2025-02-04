@@ -62,9 +62,6 @@ if status is-interactive
       --border
       --header 'Press CTRL-Y to copy command into clipboard'"
 
-    # Carregar o ASDF para gerenciar versões
-    source ~/.asdf/asdf.fish
-
     # Exibir estrutura de diretórios com tree
     export FZF_ALT_C_OPTS="
       --walker-skip .git,node_modules,target,venv
