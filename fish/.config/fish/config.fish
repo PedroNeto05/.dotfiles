@@ -1,6 +1,6 @@
 # Configurações globais
 # NVIM
-export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 alias v='nvim'
 # NVIM END
 
