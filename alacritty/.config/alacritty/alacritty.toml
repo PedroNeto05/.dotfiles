@@ -1,0 +1,17 @@
+[env]
+TERM = "xterm-256color"
+
+[general]
+import = [ "tokyo-night.toml" ]
+live_config_reload = true
+
+[font]
+normal.family = "CaskaydiaCove Nerd Font Mono"
+bold.family = "CaskaydiaCove Nerd Font Mono"
+italic.family = "CaskaydiaCove Nerd Font Mono"
+bold_italic.family = "CaskaydiaCove Nerd Font Mono"
+
+size = 18.0
+
+[window]
+startup_mode = "Maximized"
