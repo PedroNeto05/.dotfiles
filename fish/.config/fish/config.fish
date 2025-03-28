@@ -57,10 +57,9 @@ if status is-interactive
     
     # Configuração para copiar para o clipboard com CTRL-Y
     export FZF_CTRL_R_OPTS="
-      --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
       --color header:italic
       --border
-      --header 'Press CTRL-Y to copy command into clipboard'"
+      "
 
     # Exibir estrutura de diretórios com tree
     export FZF_ALT_C_OPTS="
