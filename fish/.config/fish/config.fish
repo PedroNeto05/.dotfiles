@@ -50,7 +50,7 @@ if status is-interactive
 
     # Configuração de preview de arquivos com o bat
     export FZF_CTRL_T_OPTS="
-      --walker-skip .git,node_modules,target,venv,__pycache__,.mypy_cache,
+      --walker-skip .git,node_modules,target,venv,.venv,__pycache__,.mypy_cache,
       --preview 'bat -n --color=always {}'
       --border
       --bind 'ctrl-/:change-preview-window(down|hidden|)'"
@@ -64,7 +64,7 @@ if status is-interactive
 
     # Exibir estrutura de diretórios com tree
     export FZF_ALT_C_OPTS="
-      --walker-skip .git,node_modules,target,venv
+      --walker-skip .git,node_modules,target,venv,.venv,__pycache__,.mypy_cache,
       --border
       --preview 'tree -C {}'"
 
