@@ -4,7 +4,7 @@
     cd yay
     makepkg -si
 ### Instalar Programas
-    yay -S neovim tmux lazygit unzip fish starship asdf-vm stow kitty github-cli fzf uv
+    yay -S neovim tmux lazygit unzip fish starship asdf-vm stow kitty github-cli fzf uv ripgrep fd
 ### Terminal 
     chsh -s /usr/bin/fish
 ### Plugin Tmux
