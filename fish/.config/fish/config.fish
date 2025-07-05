@@ -17,6 +17,10 @@ set -x ANDROID_HOME $HOME/Android/Sdk
 set -x PATH $PATH $ANDROID_HOME/emulator
 set -x PATH $PATH $ANDROID_HOME/platform-tools
 
+# intellij-idea
+set -x PATH $PATH $HOME/intellij-idea/bin
+#
+
  # ASDF configuration code
 if test -z $ASDF_DATA_DIR
     set _asdf_shims "$HOME/.asdf/shims"
