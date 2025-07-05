@@ -1,7 +1,7 @@
 # Configurações globais
 # NVIM
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
-alias v='nvim'
+set PATH $PATH /opt/nvim-linux-x86_64/bin
+alias v 'nvim'
 # NVIM END
 
 # Cargo (Rust)
