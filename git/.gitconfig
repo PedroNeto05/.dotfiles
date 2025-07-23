@@ -3,3 +3,5 @@
 	name = Pedro Neto
 [init]
 	defaultBranch = main
+[core]
+	editor = nvim
