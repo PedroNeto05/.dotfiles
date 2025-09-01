@@ -1,4 +1,4 @@
-if test -n "$CONTAINER_ID" -a -f "$module_dir/container.fish"
+if test -n "$CONTAINER_ID" -a -f "$module_dir/asdf.fish"
     if test -f $HOME/.asdf/asdf.fish
         source $HOME/.asdf/asdf.fish
     end
