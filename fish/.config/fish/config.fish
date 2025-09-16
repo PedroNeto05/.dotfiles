@@ -3,6 +3,7 @@
 set PATH $PATH /opt/nvim-linux-x86_64/bin
 alias v nvim
 # NVIM END
+alias bat batcat
 
 set -x GOPATH $HOME/go
 
@@ -12,3 +13,5 @@ for mod in $module_dir/*.fish
         source $mod
     end
 end
+eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
