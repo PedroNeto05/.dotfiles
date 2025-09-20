@@ -5,8 +5,6 @@ alias v nvim
 # NVIM END
 alias bat batcat
 
-set -x GOPATH $HOME/go
-
 set -l module_dir $HOME/.config/fish/modules
 for mod in $module_dir/*.fish
     if test -f $mod
