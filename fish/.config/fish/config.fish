@@ -3,7 +3,6 @@
 set PATH $PATH /opt/nvim-linux-x86_64/bin
 alias v nvim
 # NVIM END
-alias bat batcat
 
 eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
