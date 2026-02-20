@@ -1,10 +1,7 @@
 # Configurações globais
 # NVIM
-set PATH $PATH /opt/nvim-linux-x86_64/bin
 alias v nvim
 # NVIM END
-
-eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 set -l module_dir $HOME/.config/fish/modules
 for mod in $module_dir/*.fish
