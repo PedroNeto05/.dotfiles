@@ -13,4 +13,4 @@ for mod in $module_dir/*.fish
     end
 end
 
-set -Ux PATH $HOME/.local/bin $PATH
+set -U fish_user_paths ~/.local/bin $fish_user_paths
