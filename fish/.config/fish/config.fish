@@ -12,3 +12,5 @@ for mod in $module_dir/*.fish
         source $mod
     end
 end
+
+set -Ux PATH $HOME/.local/bin $PATH
