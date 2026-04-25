@@ -1,10 +1,10 @@
-# Configurações globais
-# NVIM
 alias v nvim
 function open
-    nautilus $argv & disown
+    if test (count $argv) -eq 0
+        set argv .
+    end
+    xdg-open $argv >/dev/null 2>&1 & disown
 end
-# NVIM END
 
 set -l module_dir $HOME/.config/fish/modules
 for mod in $module_dir/*.fish
