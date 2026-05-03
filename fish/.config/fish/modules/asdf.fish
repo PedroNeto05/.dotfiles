@@ -1,10 +1,10 @@
-if test -z $ASDF_DATA_DIR
-    set _asdf_shims "$HOME/.asdf/shims"
-else
-    set _asdf_shims "$ASDF_DATA_DIR/shims"
+# Define o diretório do asdf (caso não exista)
+if test -z "$ASDF_DATA_DIR"
+    set -gx ASDF_DATA_DIR $HOME/.asdf
 end
 
-if not contains $_asdf_shims $PATH
-    set -gx --prepend PATH $_asdf_shims
+# Adiciona os shims ao PATH (na frente)
+if not contains "$ASDF_DATA_DIR/shims" $PATH
+    set -gx PATH "$ASDF_DATA_DIR/shims" $PATH
 end
-set --erase _asdf_shims
+
