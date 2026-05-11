@@ -1,3 +1,4 @@
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 alias v nvim
 function open
     if test (count $argv) -eq 0
@@ -14,3 +15,5 @@ for mod in $module_dir/*.fish
 end
 
 set -U fish_user_paths ~/.local/bin $fish_user_paths
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
