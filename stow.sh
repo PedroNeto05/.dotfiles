@@ -1,7 +1,7 @@
 #!/bin/bash
 
 STOW_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
-PACKAGES=(fish kitty starship tmux)
+PACKAGES=(fish kitty starship tmux git)
 
 for pkg in "${PACKAGES[@]}"; do
   if [ -d "$STOW_DIR/$pkg" ]; then
