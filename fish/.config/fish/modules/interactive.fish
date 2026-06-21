@@ -30,4 +30,7 @@ if status is-interactive
 
     # Inicializar Starship para prompt moderno
     starship init fish | source
+
+    # Zoxide - cd inteligente (adiciona o comando 'z'; o cd continua normal)
+    zoxide init fish | source
 end
